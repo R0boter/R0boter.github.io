@@ -1,52 +1,71 @@
-# Basic
-title: Robot
-subtitle: 兴趣使然的图灵机
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: 人生一世，不过于苦海作乐。
-creator: <a href="http://leont.ml">@Leon</a>
+encoding: utf-8
 
-url: "http://vno.onevcat.com"
+# SEO相关信息
+title: R0boter's Blog
+description: 兴趣使然的图灵机
+keywords: Roboter,Blog,Python,Html,JavaScript,C,PHP,ShellScript
+author: Mr.R0boter
+#footerText: "Copyright © 2016 皖ICP备16016174号"
 
-permalink: /:year/:month/:title/
+# 这些不要动
+permalink: /posts/:year/:month/:day/:title.html
+kramdown:
+  auto_ids: true
+  input: GFM
+exclude:
+  [
+    "CNAME",
+    "README.md",
+    "LICENSE",
+    "_site",
+    "dist",
+    "Gemfile",
+    "Gemfile.lock",
+    "cli.bat",
+    "dist.tar.gz",
+  ]
 
-# Format
-highlighter: plain
+# 域名配置
+# baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
+domainUrl: "http://r0boter.gitee.io"
+baseurl: ""
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-#cover_color: red
+# 吐个槽地址，会在chat页面中重定向到该地址
+tucaoUrl: https://support.qq.com/product/86335
 
-# The blog button should not be removed.
-blog_button:
-    title: Blog
-    description: Visit blog
+# 菜单
+menu:
+  - title: 首页
+    url: /
+  - title: 归类
+    url: /pages/categories.html
+  - title: 搜索
+    url: /pages/search.html
+  - title: 友链
+    url: /pages/links.html
+  - title: 留言
+    url: /pages/chat.html
+  - title: 关于
+    url: /pages/about.html
 
-# Navigation buttons in the front page.
-nav:
-    - {title: Tools, description: My tools, url: 'http://tools.leont.ml'}
-    # - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+# 点击页面文字冒出特效,不需要请设置为false
+extClickEffect: true
 
-# Pagination
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "page/:num/"
+# Google Adsense,不需要请设置为false
+# _includes/ext-adsense.html 里面修改为自己的配置
+extAdsense: false
 
-# Comment
-comment:
-    disqus: vno-jekyll
-    # duoshuo: 
-    
-# Social
-social:
-#    weibo: onevcat
-#    github: onevcat
-#    twitter: onevcat
-#    gplus: 107108267983477358170
-    mail: 3433538213@qq.com
+# 腾讯MTA移动分析,不需要请设置为false
+# _includes/ext-adsense.html 里面修改为自己的配置
+extMTA: true
 
-# Google Analytics
-ga:
-    # id: your_ga_id
-    # host: your_host
+# 百度收录自动推送,不需要请设置为false
+extBaidu: true
 
-theme: jekyll-theme-cayman
+# 数学公式支持，比较影响加载速度,不需要请设置为false
+extMath: false
+
+# 友情链接
+links:
+  - title: TMaize Blog
+    url: https://blog.tmaize.net

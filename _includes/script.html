@@ -13,14 +13,6 @@
 </script>
 {% endif %}
 
-{%- if site.extMTA %}
-{% include ext-mta.html %}
-{% endif %}
-
-{%- if site.extBaidu -%}
-{% include ext-baidu.html %}
-{% endif %}
-
 {%- if site.extMath and page.layout=="post" -%}
 {% include ext-mathjax.html %}
 {% endif %}

@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#ffffff" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="applicable-device" content="pc,mobile" />
-  <!-- <meta name="google-site-verification" content="ckhUaoa05QCmWoE1FafzTBcqYI4yBOy-UJKopXDS18M" /> -->
   <meta name="author" content="{{ site.author }}" />
   {%- if page.categories %}
   <meta name="description" content="{{ page.title }}" />
@@ -35,6 +34,20 @@
   />
   {%- endif %}
   {%- if page.layout == "page" %}
+  <link
+    rel="stylesheet"
+    href="{{site.baseurl}}/static/css/common.css?t={{buildAt}}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.baseurl}}/static/css/post.css?t={{buildAt}}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.baseurl}}/static/css/highlight.css?t={{buildAt}}"
+  />
+  {%- endif %}
+  {%- if page.layout == "default" %}
   <link
     rel="stylesheet"
     href="{{site.baseurl}}/static/css/common.css?t={{buildAt}}"

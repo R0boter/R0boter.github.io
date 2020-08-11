@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 {% include head.html -%}
 <body ondragstart="return false;">
 {% include header.html -%}
@@ -18,6 +20,22 @@
   {% endif %}
 </div>
 {% include footer.html -%}
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 {% include script.html -%}
+{% if site.gitalk.gitalk %}
+  <script>
+      var gitalk = new Gitalk({
+            clientID: '{{ site.gitalk.gitalk_clientID }}',
+            clientSecret: '{{ site.gitalk.gitalk_Secret }}',
+            repo: '{{ site.gitalk.gitalk_repo }}',
+            owner: '{{ site.gitalk.gitalk_owner }}',
+            admin: '{{ site.gitalk.gitalk_admin }}',
+            id: location.pathname,      // Ensure uniqueness and length less than 50{{ page.title }}
+            distractionFreeMode: '{{ site.gitalk.distractionFreeMode }}'  // Facebook-like distraction free mode
+          })
+
+          gitalk.render('disqus_thread')
+  </script>
+{% endif %}
 </body>
 </html>

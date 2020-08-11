@@ -33,6 +33,16 @@ baseurl: ""
 # 吐个槽地址，会在chat页面中重定向到该地址
 tucaoUrl: https://support.qq.com/product/86335
 
+# gitalk
+gitalk:
+  gitalk: true
+  gitalk_clientID: "bd7f3983c36647ece8cd"
+  gitalk_Secret: "ea985a4aa3ffd04ed8448a408e680b252a3f6607"
+  gitalk_repo: "r0boter.github.io"
+  gitalk_owner: "R0boter"
+  gitalk_admin: "R0boter"
+  distractionFreeMode: true
+
 # 菜单
 menu:
   - title: 首页
@@ -60,7 +70,7 @@ extAdsense: false
 extMTA: true
 
 # 百度收录自动推送,不需要请设置为false
-extBaidu: true
+extBaidu: false
 
 # 数学公式支持，比较影响加载速度,不需要请设置为false
 extMath: false

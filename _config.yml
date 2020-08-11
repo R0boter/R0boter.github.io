@@ -1,9 +1,9 @@
 encoding: utf-8
 
 # SEO相关信息
-title: R0boter's Blog
+title: Mr.R0boter's Blog
 description: 兴趣使然的图灵机
-keywords: Roboter,Blog,Python,Html,JavaScript,C,PHP,ShellScript
+keywords: R0boter,Blog,Python,Html,JavaScript,C,PHP,ShellScript
 author: Mr.R0boter
 #footerText: "Copyright © 2016 皖ICP备16016174号"
 
@@ -33,9 +33,9 @@ baseurl: ""
 # 吐个槽地址，会在chat页面中重定向到该地址
 tucaoUrl: https://support.qq.com/product/86335
 
-comment_gitalk_clientId: bd7f3983c36647ece8cd
-comment_gitalk_clientSecret: ea985a4aa3ffd04ed8448a408e680b252a3f6607
-comment_gitalk_repo: r0boter.github.io
+gitalk_clientId: bd7f3983c36647ece8cd
+gitalk_clientSecret: ea985a4aa3ffd04ed8448a408e680b252a3f6607
+gitalk_repo: r0boter.github.io
 github_username: r0boter
 
 # 菜单

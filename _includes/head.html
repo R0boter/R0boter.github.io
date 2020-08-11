@@ -19,7 +19,21 @@
   {% endif -%}
   <link rel="icon" href="{{site.baseurl}}/static/img/favicon.ico" />
   <link rel="apple-touch-icon" href="{{site.baseurl}}/static/img/logo.png" />
-  {%- if page.layout == "post" || page.layout == "page" %}
+  {%- if page.layout == "post" %}
+  <link
+    rel="stylesheet"
+    href="{{site.baseurl}}/static/css/common.css?t={{buildAt}}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.baseurl}}/static/css/post.css?t={{buildAt}}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{site.baseurl}}/static/css/highlight.css?t={{buildAt}}"
+  />
+  {%- endif %}
+  {%- if page.layout == "page" %}
   <link
     rel="stylesheet"
     href="{{site.baseurl}}/static/css/common.css?t={{buildAt}}"

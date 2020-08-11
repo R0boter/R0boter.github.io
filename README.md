@@ -48,7 +48,7 @@ bundle exec jekyll serve --watch --host=0.0.0.0 --port=8080
 
 ```yaml
 ---
-layout: mypost
+layout: post
 title: 标题
 categories: [分类1, 分类2]
 ---

@@ -23,11 +23,11 @@
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
-      clientID: {{site.gitalk_clientId}},
-      clientSecret: {{gitalk_clientSecret}},
-      repo: {{gitalk_repo}},
-      owner: {{github_username}},
-      admin: [{{github_username}}],
+      clientID: "{{site.gitalk_clientId}}",
+      clientSecret: "{{gitalk_clientSecret}}",
+      repo: "{{gitalk_repo}}",
+      owner: "{{github_username}}",
+      admin: ["{{github_username}}"],
       id: window.location.pathname,      // Ensure uniqueness and length less than 50
       distractionFreeMode: false,         // Facebook-like distraction free mode
       createIssueManually: true

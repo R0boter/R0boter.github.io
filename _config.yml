@@ -33,11 +33,6 @@ baseurl: ""
 # 吐个槽地址，会在chat页面中重定向到该地址
 tucaoUrl: https://support.qq.com/product/86335
 
-gitalk_clientId: bd7f3983c36647ece8cd
-gitalk_clientSecret: ea985a4aa3ffd04ed8448a408e680b252a3f6607
-gitalk_repo: r0boter.github.io
-github_username: r0boter
-
 # 菜单
 menu:
   - title: 首页

@@ -39,8 +39,8 @@ gitalk:
   gitalk_clientID: "bd7f3983c36647ece8cd"
   gitalk_Secret: "ea985a4aa3ffd04ed8448a408e680b252a3f6607"
   gitalk_repo: "r0boter.github.io"
-  gitalk_owner: "R0boter"
-  gitalk_admin: "R0boter"
+  gitalk_owner: "r0boter"
+  gitalk_admin: "r0boter"
   distractionFreeMode: true
 
 # 菜单

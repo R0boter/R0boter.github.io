@@ -8,7 +8,7 @@ author: Mr.R0boter
 #footerText: "Copyright © 2016 皖ICP备16016174号"
 
 # 这些不要动
-permalink: /posts/:title.html
+permalink: /blog/:title.html
 kramdown:
   auto_ids: true
   input: GFM

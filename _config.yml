@@ -9,21 +9,13 @@ author: Mr.R0boter
 
 # 这些不要动
 permalink: /blog/:title.html
+# jekyll 默认的 markdown 解析器设置
 kramdown:
-  auto_ids: true
-  input: GFM
+  # 设置 kramdown 按照 github 风格解析
+  input: GF
+# jekyll 构建时 忽略的文件和文件夹
 exclude:
-  [
-    "CNAME",
-    "README.md",
-    "LICENSE",
-    "_site",
-    "dist",
-    "Gemfile",
-    "Gemfile.lock",
-    "cli.bat",
-    "dist.tar.gz",
-  ]
+  ["CNAME", "README.md", "LICENSE", "_site", "dist", "Gemfile", "Gemfile.lock"]
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名

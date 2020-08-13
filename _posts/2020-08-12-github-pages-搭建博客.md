@@ -1,6 +1,6 @@
 ---
 layout: post
-title: github pages 搭建博客
+title: Github Pages 搭建博客
 categories: [博客, 建站]
 ---
 
@@ -20,6 +20,7 @@ categories: [博客, 建站]
 ## 建立博客仓库
 
 1. 申请一个 github 账号
-2. 新建一个仓库，仓库名为 用户名.github.io 以我的为例，我用户名为 R0boter ,则仓库名为 R0boter.github.io
+2. 新建一个仓库，仓库名为`username.github.io`以我的为例，我用户名为`R0boter` ,则仓库名为`R0boter.github.io`
 3. 仓库设置为公共仓库，即 Public
 4. 本地搭建 jekyll 环境，关于 jekyll 的基本使用和基础知识我会在[这篇博文](./jekyll-github-官方静态网页生成器)里做详细介绍
+   ![](/assets/2020-08-12-github-pages-搭建博客/18-51-07.png)

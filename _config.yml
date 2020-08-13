@@ -8,11 +8,11 @@ author: Mr.R0boter
 #footerText: "Copyright © 2016 皖ICP备16016174号"
 
 # 这些不要动
-permalink: /blog/:title.html
+permalink: /blog/:title
 # jekyll 默认的 markdown 解析器设置
 kramdown:
   # 设置 kramdown 按照 github 风格解析
-  input: GF
+  input: GFM
 # jekyll 构建时 忽略的文件和文件夹
 exclude:
   ["CNAME", "README.md", "LICENSE", "_site", "dist", "Gemfile", "Gemfile.lock"]

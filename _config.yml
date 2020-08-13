@@ -7,8 +7,8 @@ keywords: R0boter,Blog,Python,Html,JavaScript,C,PHP,ShellScript
 author: Mr.R0boter
 #footerText: "Copyright © 2016 皖ICP备16016174号"
 
-# 这些不要动
-permalink: /blog/:title
+# 设置永久链接地址
+permalink: /:title
 # jekyll 默认的 markdown 解析器设置
 kramdown:
   # 设置 kramdown 按照 github 风格解析
@@ -36,6 +36,10 @@ menu:
     url: /pages/chat.html
   - title: 关于
     url: /pages/about.html
+
+# 分页功能
+paginate: 5
+paginate_path: "page:num"
 
 # 点击页面文字冒出特效,不需要请设置为false
 extClickEffect: true

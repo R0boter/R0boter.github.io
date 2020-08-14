@@ -29,7 +29,7 @@ Windows 可以使用 Linux 子系统进行安装。
 # 更新源，在 root 权限下操作，如果是普通用户前面应该加上 sudo
 apt-get update
 # 安装 Ruby
-apt-get install ruby
+apt-get install ruby ruby-dev
 # 安装 Jekyll 可构建工具 bundler
 gem install jekyll bundler
 ```

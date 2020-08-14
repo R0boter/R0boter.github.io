@@ -21,7 +21,7 @@ categories: [博客, 建站]
 
 1. 申请一个 github 账号
 2. 新建一个仓库，仓库名为`username.github.io`以我的为例，我用户名为`R0boter` ,则仓库名为`R0boter.github.io`。仓库必须设置为公共仓库，即 Public
-3. 本地搭建 jekyll 环境，关于 jekyll 的基本使用和基础知识我会在[这篇博文](Jekyll-Github-官方静态网页生成器)里做详细介绍
+3. 本地搭建 jekyll 环境，关于 jekyll 的基本使用和基础知识我会在[这篇博文](Jekyll一个Github官方支持的静态网页生成器)里做详细介绍
 4. 使用 jekyll 初始化博客文件夹，或者下载别人已经做好的使用 jekyll 的博客
 5. 将本地的文件夹初始化为 git 仓库，并关联到之前新建的仓库。关于 git 的基本使用方法我会在[这篇博文](Git-初体验)里做详细介绍
 6. 写文章，并推送到 github 远程仓库，访问你的博客地址`username.github.io`

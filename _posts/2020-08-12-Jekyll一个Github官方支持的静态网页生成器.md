@@ -20,7 +20,9 @@ Jekyll 是由 Ruby 语言编写的，可以使用 Ruby 的包管理工具 Gem �
 
 因为在 Windows 上安装 Ruby 比较麻烦(主要是下载很慢)，所以我推荐的是在 Linux 上进行安装
 
-Windows 可以使用 Linux 子系统进行安装。以 Debian 系为例
+Windows 可以使用 Linux 子系统进行安装。
+
+以 Debian 系为例
 
 ```shell
 # 首先修改软件源为国内源，源推荐中科大的源。请自行百度或查看我关于 linux 的文章
@@ -41,7 +43,9 @@ gem install jekyll bundler
 `jekyll build`：生成静态网页，此命令必须在博客根目录使用，它会将当前文件夹下的内容生成到当前文件夹下的`_site`文件夹中。此命令有三个参数
 
 > `--destination <destination>`：指定生成的目标文件夹，将生成的内容生成到指定的文件夹，而不是当前目录的`_site`文件夹
+>
 > `--source <source>`：指定源文件夹，默认将当前文件夹下的内容生成到`_site`文件夹，此选项可以将指定的文件夹下的内容生成到当前文件夹下的`_site`目录。这两个选项可以相互配合
+>
 > `--watch`：一般用于调试，将当前文件夹中的内容生成到当前目录的`_site`文件夹中，且当前文件夹中内容发生改变时，会自动生成。但不会监视配置文件的修改
 
 `jekyll server`：启动 jekyll 服务器，默认在 4000 端口，这是你访问 `http://localhost:4000` 就可以看到自己的博客了。使用`--detach`选项可以使 Jekyll 服务在后台运行
@@ -49,12 +53,13 @@ gem install jekyll bundler
 ## 目录结构
 
 ```shell
+# 说明一下，注释中说用大括号包裹或双大括号包裹的，请自行将后面跟的字符串使用大括号包裹，因为我如果直接写大括号会被 Jekyll 解析，见谅
 .
-├── _includes           # 在这个文件夹下的内容可以使用 {% include filename.ext %} 包含到你的任意一个页面。一般用来存放一下网页头部和脚部以及个人定义的包含文件
+├── _includes           # 在这个文件夹下的内容可以使用大括号包裹的 % include filename.ext 包含到你的任意一个页面。一般用来存放一下网页头部和脚部以及个人定义的包含文件
 |   ├── footer.html
 |   └── header.html
 ├── _layouts            # 布局文件夹，即包裹在文章或其他页面外部的模板，在文章中的 YAML 头信息中的 layout 字段定义要使用的模板
-|   ├── default.html    # 文件中的 {{content}} 就表示被包含的文章内容或文件内容
+|   ├── default.html    # 文件中的使用双大括号包裹的 content 就表示被包含的文章内容或文件内容
 |   └── post.html
 ├── _drafts             # 草稿文件夹，不带日期的文章
 |   ├── begin-with-the-crazy-ideas.textile

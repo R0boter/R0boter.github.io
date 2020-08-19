@@ -6,6 +6,8 @@ categories: [Archlinux,个人]
 
 ## 简介
 
+> 关于我为什么选择 Archlinux，以及我使用 Archlinux 所遵循的原则，请您参考[这篇博文](我的Archlinux)
+
 此脚本是我根据 Archlinux Wiki 上对安装 archlinux 的说明编写的脚本,原则是尽可能安装最少的软件，防止以后版本变更中产生过于复杂的依赖,所以安装脚本，执行完毕后，只有最基础的字符界面，如果需要桌面环境需要另行安装
 
 你可以使用`wget https://raw.githubusercontent.com/R0boter/ArchlinuxInstall/master/archInstall.sh`下载此脚本

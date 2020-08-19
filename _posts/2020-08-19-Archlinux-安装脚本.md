@@ -68,9 +68,7 @@ Tips:
       - wget 和 curl 两款下载工具，比较常用 wget 感觉比 curl 稳定一些，但 curl 感觉更快一些
       - unrar unzip tar 打包软件和解压软件
       - gcc make g++ 编译软件
-      - fakeroot binutils 
       - fontconfig 字体配置工具
-      - pkgconf
 9. 设置root账户密码，并添加新用户，开启使用 sudo 时不用输入密码(其实这个行为挺不安全的，建议对linux不熟的还是把这个关了，通过修改/etc/sudoers 文件)
 10. 设置自动登陆(个人是很喜欢这个功能，搭配xinit，就不用登陆管理器了，开机直接进入桌面)
 11. 设置网络

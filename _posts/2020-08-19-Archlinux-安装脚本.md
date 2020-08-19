@@ -36,6 +36,11 @@ Tips:
     :111 s/passwd/your-passwd/g
     :119 s/username/your-username/g
     ```
+6. 修改本机 hostname，默认为 Archlinux 在脚本第 52 行
+    ```sh
+    # 你可以在 vim 中使用如下命令
+    :52 s/Archlinux/your-hostname/g
+    ```
 
 ## 安装脚本流程
 
@@ -50,7 +55,8 @@ Tips:
       - 生成挂载文件 fstab
       - 设置时区为上海，并同步硬件时间
       - 设置本地环境变量支持中文，但默认显示是英文(防止字符界面乱码)
-      - 设置本地 hosts 文件和本机 hostname，将 github 下各个网址的解析写入 hosts 文件，防止 DNS 污染导致的 github 及其下网址无法访问
+      - 设置本机 hostname
+      - 设置本地 hosts 文件，使用的是 Archlinux Wiki 中推荐的下载 github 上别人维护的一个 hosts 文件
       - 设置 nvim 为默认编辑器，并设置 vi 和 vim 的软链接都是 nvim
       - 为 pacman 开启色彩和彩蛋(pacman 进度条变成真正的吃豆人)
 8. 启动引导设置，我没有使用常规的 grub 方式引导，而使用的 archlinux 内置的systemd 下的 systemd-boot 工具

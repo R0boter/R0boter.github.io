@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Archlinux 桌面环境安装脚本介绍

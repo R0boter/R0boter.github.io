@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bash 的 Vi-mode
-categories: [vim, bash, zsh]
+categories: [Vim, Bash, Zsh]
 ---
 
 ## bash 下的输入模式

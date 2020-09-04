@@ -7,6 +7,8 @@ categories: [Archlinux, 个人]
 ## 简介
 
 > 关于我为什么选择 Archlinux，以及我使用 Archlinux 所遵循的原则，请您参考[这篇博文](我的Archlinux)
+>
+> 如果您是初次接触 Linux 建议先看[这篇博文](Archlinux-安装过程)，便于理解其中一些 linux 命令的作用
 
 此脚本主要是为我使用的平铺式窗口 DWM 准备的安装脚本，用于配置安装 DWM 前的 X11 窗口服务，和安装后我日常中会用到的常用软件
 

@@ -36,7 +36,7 @@ categories: [Archlinux, 个人]
 3. 向 `.zprofile` 写入自动启动桌面环境。`.zprofile` 是 `zsh` 的环境配置文件，类似于 `bash` 的 `.profile`
 4. 创建家目录下的常用文件夹：下载、文档、图片、音乐、视频(因为是平铺式，所以我觉得桌面文件夹没什么必要)
 5. 删除 bash 的用户配置文件
-6. 下载我的配置和 dwm、st、dmenu、slock、wmname 源码，将壁纸和配置文件拷贝到对应的地方，进入 dwm、st、dwm、st、dmenu、slock、wmname 下编译安装，然后删除这四个文件夹，最后下载我的 neovim 配置
+6. 下载我的配置和 dwm、st、dmenu、slock、wmname 源码，将壁纸和配置文件拷贝到对应的地方，进入 dwm、st、dwm、st、dmenu、slock、wmname 下编译安装，然后删除这些文件夹，最后下载我的 neovim 配置
 7. 安装输入驱动、中文字体和中文输入法
    - xf86-input-libinput：输入驱动
    - 思源宋体和思源黑体

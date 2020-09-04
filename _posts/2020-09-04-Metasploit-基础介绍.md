@@ -4,8 +4,6 @@ title: Metasploit 的基础介绍
 categories: [Metasploit, 安全工具]
 ---
 
-# Metasploit Framework 基础知识
-
 ## 结构
 
 1. 基础库文件：分为 Rex(Ruby Extension)、framework-core、framework-base

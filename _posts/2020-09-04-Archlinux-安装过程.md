@@ -14,6 +14,8 @@ categories: [Archlinux]
 
 [Archlinux 安装脚本](Archlinux-安装脚本)和[Archlinux 桌面环境安装脚本](Archlinux-桌面环境安装脚本)
 
+**Tips：此文章所写安装方法及安装的软件和我现在使用的出入比较大，但和 WIKI 上推荐的安装方法还是一样，所以仅有参考价值。建议看另两篇文章**
+
 ## 准备
 
 1. 下载镜像
@@ -108,7 +110,7 @@ categories: [Archlinux]
 
 1. 安装桌面及终端
 
-   1. i3-gaps demun
+   1. dwm demun
 
    2. intel 开源显卡驱动 xf86-video-intel
 

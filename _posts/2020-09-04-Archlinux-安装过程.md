@@ -116,7 +116,7 @@ categories: [Archlinux]
 
    3. 触摸板输入设备驱动 xf86-input-libinput
 
-   4. 终端及默认 shell oh-my-zsh 和 rxvt-unicode
+   4. 终端及默认 shell oh-my-zsh 和 st
 
    5. 软件 git wget curl unrar unzip tar
 

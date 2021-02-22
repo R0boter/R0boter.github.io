@@ -12,26 +12,30 @@ categories: [Archlinux, 个人]
 
 此脚本是我根据 Archlinux Wiki 上对安装 archlinux 的说明编写的脚本,原则是尽可能安装最少的软件，防止以后版本变更中产生过于复杂的依赖,所以安装脚本，执行完毕后，只有最基础的字符界面，如果需要桌面环境需要另行安装
 
-你可以使用`wget https://raw.githubusercontent.com/R0boter/ArchlinuxInstall/master/archInstall.sh`下载此脚本
+你可以使用`git clone --depth=1 https://github.com/r0boter/autoArch`克隆此仓库
 
-如果您也是极简主义者，或许您会喜欢平铺式窗口，可以使用我桌面安装脚本，和我配置的 dwm （当然您也可以选择其他窗口管理器，依然可以使用我的桌面环境安装脚本）
+仓库中的`startInstall.sh`和`baseInstall.sh`脚本是用于安装基础的 Archlinux(安装完成后只有基础的字符界面)
+
+如果您也是极简主义者，或许您会喜欢平铺式窗口，可以使用我桌面安装脚本`archDesktop.sh`，和我配置的 dwm （当然您也可以选择其他窗口管理器，依然可以使用我的桌面环境安装脚本）其脚本介绍请参考我博客的[这篇文章](Archlinux-桌面环境安装脚本介绍)
 
 Tips:
 
-1. 为了尽可能少的出现意外情况，此脚本有很大限制，具体限制如下
+1. 此文章介绍的是`startInstall.sh`和`baseInstall.sh`
 
-2. 使用此脚本之前请确保，您在进入 archlinux 安装终端后已经联网且有更新软件源和安装 git
+2. 为了尽可能少的出现意外情况，此脚本有很大限制，具体限制如下
+
+3. 使用此脚本之前请确保，您在进入 archlinux 安装终端后已经联网且有更新软件源和安装 git
 
    ```sh
    pacman -Syy
    pacman -S git
    ```
 
-3. 确保您是以 UEFI 方式启动，此脚本不对 Legacy 启动方式兼容
+4. 确保您是以 UEFI 方式启动，此脚本不对 Legacy 启动方式兼容
 
-4. 此脚本，默认只有一块磁盘，且 archlinux 将完全使用这块磁盘(因为我个人不是很支持双系统的方式，感觉很麻烦)。如果您有多块磁盘需要挂载可以修改 format_disk 函数
+5. 此脚本，默认只有一块磁盘，且 archlinux 将完全使用这块磁盘(因为我个人不是很支持双系统的方式，感觉很麻烦)。如果您有多块磁盘需要挂载可以修改 format_disk 函数
 
-5. 使用此脚本之前必须修改脚本中 cfg_user 函数中的 root 密码(第 109 行，默认为 toor)，用户名(第 111 行，默认为 username)，用户密码(第 111 行，默认为 passwd)。和 cfg_autologin 函数中的用户名为您在 cfg_user 函数中修改的用户名(第 119 行，默认为 username)。
+6. 使用此脚本之前必须修改脚本中 cfg_user 函数中的 root 密码(第 109 行，默认为 toor)，用户名(第 111 行，默认为 username)，用户密码(第 111 行，默认为 passwd)。和 cfg_autologin 函数中的用户名为您在 cfg_user 函数中修改的用户名(第 119 行，默认为 username)。
 
    ```sh
    # 你可以在 vim 中使用如下
@@ -41,7 +45,7 @@ Tips:
    :119 s/username/your-username/g
    ```
 
-6. 修改本机 hostname，默认为 Archlinux 在脚本第 52 行
+7. 修改本机 hostname，默认为 Archlinux 在脚本第 52 行
    ```sh
    # 你可以在 vim 中使用如下命令
    :52 s/Archlinux/your-hostname/g
